@@ -4,8 +4,8 @@ public class Producto extends Item{
 
 	private Double precio;
 
-	public Producto(Long iD, String descripcion, Double precio) {
-		super(iD, descripcion);
+	public Producto(Long id, String descripcion, Double precio) {
+		super(id, descripcion);
 		this.precio = precio;
 	}
 

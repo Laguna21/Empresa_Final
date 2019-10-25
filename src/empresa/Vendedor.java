@@ -1,10 +1,13 @@
 package empresa;
 
+import java.util.LinkedList;
+
 public class Vendedor {
 
 	private String nom;
 	private String ape;
 	private Double porComision;
+	private LinkedList<Venta> listaVentasRealizadas;
 	
 	
 	public Vendedor(String nom, String ape, Double porComision) {
@@ -12,6 +15,7 @@ public class Vendedor {
 		this.nom = nom;
 		this.ape = ape;
 		this.porComision = porComision;
+		this.listaVentasRealizadas = new LinkedList();
 	}
 
 

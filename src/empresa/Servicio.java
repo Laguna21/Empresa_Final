@@ -3,10 +3,10 @@ package empresa;
 public class Servicio extends Item{
 
 	private Integer cantHoras;
-	private Integer precioHora;
+	private Double precioHora;
 	
 	public Servicio(Long id, String descripcion, Integer cantHoras,
-			Integer precioHora) {
+			Double precioHora) {
 		super(id, descripcion);
 		this.cantHoras = cantHoras;
 		this.precioHora = precioHora;
@@ -20,12 +20,18 @@ public class Servicio extends Item{
 		this.cantHoras = cantHoras;
 	}
 
-	public Integer getPrecioHora() {
+	public Double getPrecioHora() {
 		return precioHora;
 	}
 
-	public void setPrecioHora(Integer precioHora) {
+	public void setPrecioHora(Double precioHora) {
 		this.precioHora = precioHora;
+	}
+
+	@Override
+	public Double getPrecio() {
+		// TODO Auto-generated method stub
+		return this.precioHora * this.cantHoras;
 	}
 	
 	

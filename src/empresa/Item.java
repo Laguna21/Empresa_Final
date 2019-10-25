@@ -32,5 +32,7 @@ public abstract class Item {
 		this.descripcion = descripcion;
 	}
 	
+	public abstract Double getPrecio();
+	
 	
 }

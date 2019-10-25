@@ -3,19 +3,19 @@ package empresa;
 public class Producto extends Item{
 
 	private Double precio;
-
-	public Producto(Long id, String descripcion, Double precio) {
+	
+	
+	public Producto(Long id, String descripcion, Double precio, String descripcion2) {
 		super(id, descripcion);
 		this.precio = precio;
 	}
-
+	
+	@Override
 	public Double getPrecio() {
-		return precio;
+		
+		return this.precio;
 	}
 
-	public void setPrecio(Double precio) {
-		this.precio = precio;
-	}
 	
 	
 }

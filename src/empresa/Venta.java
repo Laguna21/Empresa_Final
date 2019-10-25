@@ -1,24 +1,26 @@
 package empresa;
 
 import java.util.Date;
-import java.util.LinkedList;
+
 
 public class Venta {
 	
-	private Long IdVenta;
+	private Integer IdVenta;
 	private Date Fecha;
 	private Integer cantidad;
 	private Item itemVendido;
+	private Vendedor vendedor;
 	
-	public Venta(Long idVenta, Date fecha, Integer cantidad, Item item) {
+	public Venta(Integer idVenta, Date fecha, Integer cantidad, Item item, Vendedor vendedor) {
 		
 		IdVenta = idVenta;
 		Fecha = fecha;
 		this.cantidad = cantidad;
 		this.itemVendido = item;
+		this.vendedor = vendedor;
 	}
 
-	public Long getIdVenta() {
+	public Integer getIdVenta() {
 		return IdVenta;
 	}
 
@@ -41,10 +43,13 @@ public class Venta {
 	public void setItemVendido(Item itemVendido) {
 		this.itemVendido = itemVendido;
 	}
-	
 
-	
-	
-	
+	public Vendedor getVendedor() {
+		return vendedor;
+	}
+
+	public void setVendedor(Vendedor vendedor) {
+		this.vendedor = vendedor;
+	}
 
 }

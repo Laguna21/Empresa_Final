@@ -33,10 +33,25 @@ public boolean agregarVenta(Venta nuevoVenta) {
 	}
 }
 public Double obtenerComisionDeLosProductosVendidosPorUnVendedor(String nom, String ape) {
-	return null;
+	Double tot = 0d;
+	for (Venta venta : listaVentas) {
+		if (venta.getVendedor().getApe().equals(ape) && venta.getVendedor().getNom().equals(nom) && venta.getItemVendido() instanceof Producto) {
+			tot += venta.getVendedor().getPorComision();
+		}
+	}
+	return tot;
 }
 public LinkedList<Venta> obtenerListaDeServicios(Date fecha, Vendedor vendedor) {
-	return null;
+	LinkedList<Venta> listaServicios = new LinkedList();
+	for (Venta venta : listaVentas) {
+		if (venta.getItemVendido() instanceof Servicio 
+				&& venta.getFecha().equals(fecha) 
+				&& venta.getVendedor().equals(vendedor)) 
+		{
+			listaServicios.add(venta);
+		}
+	}
+	return listaServicios;
 }
 
 }

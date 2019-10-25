@@ -35,6 +35,7 @@ public boolean agregarVenta(Venta nuevoVenta) {
 public Double obtenerComisionDeLosProductosVendidosPorUnVendedor(String nom, String ape) {
 	Double tot = 0d;
 	for (Venta venta : listaVentas) {
+		
 		if (venta.getVendedor().getApe().equals(ape) && venta.getVendedor().getNom().equals(nom) && venta.getItemVendido() instanceof Producto) {
 			tot += venta.getVendedor().getPorComision();
 		}

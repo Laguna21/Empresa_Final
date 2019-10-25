@@ -5,7 +5,7 @@ public class Servicio extends Item{
 	private Integer cantHoras;
 	private Double precioHora;
 	
-	public Servicio(Long id, String descripcion, Integer cantHoras,
+	public Servicio(Integer id, String descripcion, Integer cantHoras,
 			Double precioHora) {
 		super(id, descripcion);
 		this.cantHoras = cantHoras;

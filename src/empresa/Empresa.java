@@ -41,14 +41,14 @@ public Double obtenerComisionDeLosProductosVendidosPorUnVendedor(String nom, Str
 	}
 	return tot;
 }
-public LinkedList<Venta> obtenerListaDeServicios(Date fecha, Vendedor vendedor) {
-	LinkedList<Venta> listaServicios = new LinkedList();
+public LinkedList obtenerListaDeServicios(Date fecha, Vendedor vendedor) {
+	LinkedList<Servicio> listaServicios = new LinkedList();
 	for (Venta venta : listaVentas) {
 		if (venta.getItemVendido() instanceof Servicio 
 				&& venta.getFecha().equals(fecha) 
 				&& venta.getVendedor().equals(vendedor)) 
 		{
-			listaServicios.add(venta);
+			listaServicios.add((Servicio) venta.getItemVendido());
 		}
 	}
 	return listaServicios;

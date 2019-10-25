@@ -5,7 +5,7 @@ public class Producto extends Item{
 	private Double precio;
 	
 	
-	public Producto(Long id, String descripcion, Double precio, String descripcion2) {
+	public Producto(Integer id, String descripcion, Double precio) {
 		super(id, descripcion);
 		this.precio = precio;
 	}

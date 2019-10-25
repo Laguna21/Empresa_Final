@@ -2,23 +2,23 @@ package empresa;
 
 public abstract class Item {
 
-	private Long id;
+	private Integer id;
 	private String descripcion;
 	
 	
-	public Item(Long id, String descripcion) {
+	public Item(Integer id, String descripcion) {
 		
 		this.id = id;
 		this.descripcion = descripcion;
 	}
 
 
-	public Long getId() {
+	public Integer getId() {
 		return this.id;
 	}
 
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

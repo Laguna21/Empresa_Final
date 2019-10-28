@@ -16,9 +16,9 @@ public class EmpresaTest {
 public void probarEmpresa()
 {
 	LinkedList<Item> listaItems = new LinkedList<>();
-	Producto p = new Producto(123, "lava culo", 22d);
-	Producto p1 = new Producto(3123, "lava lopi", 24d);
-	Producto p2 = new Producto(1523, "lava pp", 23d);
+	Producto p = new Producto(123, "lava plato", 22d);
+	Producto p1 = new Producto(3123, "lava ropa", 24d);
+	Producto p2 = new Producto(1523, "lava algo", 23d);
 	Servicio s = new Servicio(1238, "arregla pp", 3, 42d);
 	Servicio s1 = new Servicio(1263, "arregla cho", 3, 422d);
 	Servicio s2 = new Servicio(1323, "arregla gff", 3, 425d);
@@ -49,9 +49,9 @@ public void probarEmpresa()
 @Test
 public void TestearEmpresa() {
 	Empresa lechera = new Empresa("Empresa Lechera!");
-	Producto p = new Producto(123, "lava culo", 22d);
-	Producto p1 = new Producto(3123, "lava lopi", 24d);
-	Producto p2 = new Producto(1523, "lava pp", 23d);
+	Producto p = new Producto(123, "lava plato", 22d);
+	Producto p1 = new Producto(3123, "lava ropa", 24d);
+	Producto p2 = new Producto(1523, "lava algo", 23d);
 	Servicio s = new Servicio(1238, "arregla pp", 3, 42d);
 	Servicio s1 = new Servicio(1263, "arregla cho", 3, 422d);
 	Servicio s2 = new Servicio(1323, "arregla gff", 3, 425d);
